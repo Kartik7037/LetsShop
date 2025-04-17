@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="LetShop.Scripts.Product_Order_Cancel">
+        <methods>
+          <include name="launchDriver"/>
+          <include name="TC001_Product_Order"/>
+          <include name="quitDriver"/>
+          <include name="TC002_Cancel_Order"/>
+        </methods>
+      </class> <!-- LetShop.Scripts.Product_Order_Cancel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <classes>
+      <class name="LetShop.Scripts.Product_Order_Cancel">
+        <methods>
+          <include name="launchDriver"/>
+          <include name="quitDriver"/>
+          <include name="TC003_Validate_OrderId"/>
+        </methods>
+      </class> <!-- LetShop.Scripts.Product_Order_Cancel -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

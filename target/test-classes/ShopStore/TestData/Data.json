@@ -1,0 +1,37 @@
+{
+ "TC001_Registration" : {
+ "email" : "agamveer.callen@dockstones.com",
+ "name" : "Rahul",
+ "password" : "Hello@123",
+ "First Name" : "Rahul",
+ "Last Name" : "Sharma",
+ "Company" : "XYZ PVT LTD",
+ "Address" : "Main 123 Street",
+ "Address2" : "Platinum Park",
+ "State" : "Florida",
+ "City" : "Flagstaff",
+ "Zipcode" : "123456",
+ "Mobile Number" : "9876543212",
+ "Day" : "12",
+ "Month" : "September",
+ "Year" : "1938",
+ "Country" : "United States",
+ "Title" : "Male",
+ "Subject" : "Contact Us"
+ },
+ 
+ "TC002_LoginWithIncorrectCredentials" : {
+ "email" : "agamveertt.callen@dockstones.com",
+ "password" : "Hello@123"
+ },
+ 
+ "TC003_VerifyTestCasesPage" : {
+  "email" : "agamveertt.callen@dockstones.com"
+ },
+ 
+ "TC004_LogoutUser" : {
+ "email" : "test@123mail.com",
+ "password" : "Hello@123"
+ }
+}
+]

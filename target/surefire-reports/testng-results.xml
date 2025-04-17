@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-12T13:17:55 IST" name="Suite" finished-at="2025-04-12T13:20:29 IST" duration-ms="154925">
+    <groups>
+    </groups>
+    <test started-at="2025-04-12T13:17:55 IST" name="Test" finished-at="2025-04-12T13:20:29 IST" duration-ms="154925">
+      <class name="ShopStore.Scripts.Resgistration_Login">
+        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:17:55 IST" name="launchDriver" finished-at="2025-04-12T13:17:59 IST" duration-ms="3613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method signature="TC001_Registration(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:17:59 IST" name="TC001_Registration" data-provider="getData" finished-at="2025-04-12T13:18:48 IST" duration-ms="49319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male, City=Flagstaff, Subject=Contact Us, Mobile Number=9876543212, Month=September, password=Hello@123, Year=1938, State=Florida, name=Rahul, Zipcode=123456, Country=United States, Last Name=Sharma, Day=12, email=agamveer.callen@dockstones.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_Registration -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:18:48 IST" name="quitDriver" finished-at="2025-04-12T13:18:48 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:18:48 IST" name="launchDriver" finished-at="2025-04-12T13:18:49 IST" duration-ms="1265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method signature="TC002_LoginWithIncorrectCredentials(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:18:49 IST" name="TC002_LoginWithIncorrectCredentials" data-provider="getData" finished-at="2025-04-12T13:19:28 IST" duration-ms="39089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Hello@123, email=agamveertt.callen@dockstones.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_LoginWithIncorrectCredentials -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:28 IST" name="quitDriver" finished-at="2025-04-12T13:19:29 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:29 IST" name="launchDriver" finished-at="2025-04-12T13:19:30 IST" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method signature="TC003_VerifyTestCasesPage(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:30 IST" name="TC003_VerifyTestCasesPage" data-provider="getData" finished-at="2025-04-12T13:19:37 IST" duration-ms="7370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=agamveertt.callen@dockstones.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_VerifyTestCasesPage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:37 IST" name="quitDriver" finished-at="2025-04-12T13:19:37 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:37 IST" name="launchDriver" finished-at="2025-04-12T13:19:38 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method signature="TC004_LogoutUser(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:19:38 IST" name="TC004_LogoutUser" data-provider="getData" finished-at="2025-04-12T13:20:29 IST" duration-ms="50926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Hello@123, email=test@123mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_LogoutUser -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@1a482e36]" started-at="2025-04-12T13:20:29 IST" name="quitDriver" finished-at="2025-04-12T13:20:29 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- ShopStore.Scripts.Resgistration_Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
