@@ -2,6 +2,8 @@ package ShopStore.Scripts;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -23,7 +25,7 @@ import ShopStore.Pages.TestCasesPage;
 public class Resgistration_Login extends BaseTest{
 
 	@BeforeMethod
-	public void launchDriver() {
+	public void launchDriver() throws MalformedURLException, URISyntaxException {
 		setup();
 	}
 	

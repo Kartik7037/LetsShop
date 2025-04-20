@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,21 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="ShopStore.Scripts.Resgistration_Login" class="method navigator-link" hash-for-method="TC001_Registration({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male,...)">TC001_Registration({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="ShopStore.Scripts.Resgistration_Login" class="method navigator-link" hash-for-method="TC002_LoginWithIncorrectCredentials({password=Hello@123, email=agamveertt.callen@dockstones.com})">TC002_LoginWithIncorrectCredentials({password=Hello@123, email=agamveertt.callen@dockstones.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="ShopStore.Scripts.Resgistration_Login" class="method navigator-link" hash-for-method="TC003_VerifyTestCasesPage({email=agamveertt.callen@dockstones.com})">TC003_VerifyTestCasesPage({email=agamveertt.callen@dockstones.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="ShopStore.Scripts.Resgistration_Login" class="method navigator-link" hash-for-method="TC004_LogoutUser({password=Hello@123, email=test@123mail.com})">TC004_LogoutUser({password=Hello@123, email=test@123mail.com})</a> <!-- method navigator-link -->
@@ -127,6 +142,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="TC001_Registration({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male,...)">
+                  </a> <!-- TC001_Registration({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male,...) -->
+                  <span class="method-name">TC001_Registration</span>
+                  <span class="parameters">({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male, City=Flagstaff, Subject=Contact Us, Mobile Number=9876543212, Month=September, password=Hello@123, Year=1938, State=Florida, name=Rahul, Zipcode=123456, Country=United States, Last Name=Sharma, Day=12, email=agamveer.callen@dockstones.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_LoginWithIncorrectCredentials({password=Hello@123, email=agamveertt.callen@dockstones.com})">
+                  </a> <!-- TC002_LoginWithIncorrectCredentials({password=Hello@123, email=agamveertt.callen@dockstones.com}) -->
+                  <span class="method-name">TC002_LoginWithIncorrectCredentials</span>
+                  <span class="parameters">({password=Hello@123, email=agamveertt.callen@dockstones.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_VerifyTestCasesPage({email=agamveertt.callen@dockstones.com})">
+                  </a> <!-- TC003_VerifyTestCasesPage({email=agamveertt.callen@dockstones.com}) -->
+                  <span class="method-name">TC003_VerifyTestCasesPage</span>
+                  <span class="parameters">({email=agamveertt.callen@dockstones.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TC004_LogoutUser({password=Hello@123, email=test@123mail.com})">
                   </a> <!-- TC004_LogoutUser({password=Hello@123, email=test@123mail.com}) -->
                   <span class="method-name">TC004_LogoutUser</span>
@@ -149,6 +188,9 @@
     &lt;classes&gt;
       &lt;class name=&quot;ShopStore.Scripts.Resgistration_Login&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;TC001_Registration&quot;/&gt;
+          &lt;include name=&quot;TC002_LoginWithIncorrectCredentials&quot;/&gt;
+          &lt;include name=&quot;TC003_VerifyTestCasesPage&quot;/&gt;
           &lt;include name=&quot;TC004_LogoutUser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- ShopStore.Scripts.Resgistration_Login --&gt;
@@ -191,16 +233,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC004_LogoutUser')
 data.setCell(0, 2, 'ShopStore.Scripts.Resgistration_Login')
-data.setCell(0, 3, 53589);
+data.setCell(0, 3, 52472);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC002_LoginWithIncorrectCredentials')
+data.setCell(1, 2, 'ShopStore.Scripts.Resgistration_Login')
+data.setCell(1, 3, 38779);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC001_Registration')
+data.setCell(2, 2, 'ShopStore.Scripts.Resgistration_Login')
+data.setCell(2, 3, 32390);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC003_VerifyTestCasesPage')
+data.setCell(3, 2, 'ShopStore.Scripts.Resgistration_Login')
+data.setCell(3, 3, 5774);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -215,20 +269,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">ShopStore.Scripts.Resgistration_Login</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC002_LoginWithIncorrectCredentials</span>
-                <br/>
-                <span class="ignored-method-name">TC003_VerifyTestCasesPage</span>
-                <br/>
-                <span class="ignored-method-name">TC001_Registration</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -243,12 +286,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC004_LogoutUser({password=Hello@123, email=test@123mail.com})</span>
-                <span class="method-start">4555 ms</span>
+                <span class="method-name">TC001_Registration({Company=XYZ PVT LTD, Address=Main 123 Street, First Name=Rahul, Address2=Platinum Park, Title=Male,...)</span>
+                <span class="method-start">2933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">58148 ms</span>
+                <span class="method-start">35326 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchDriver</span>
+                <span class="method-start">35556 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC002_LoginWithIncorrectCredentials({password=Hello@123, email=agamveertt.callen@dockstones.com})</span>
+                <span class="method-start">37012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">75792 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchDriver</span>
+                <span class="method-start">76038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC003_VerifyTestCasesPage({email=agamveertt.callen@dockstones.com})</span>
+                <span class="method-start">77550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">83327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchDriver</span>
+                <span class="method-start">83492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC004_LogoutUser({password=Hello@123, email=test@123mail.com})</span>
+                <span class="method-start">84726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">137200 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

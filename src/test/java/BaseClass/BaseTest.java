@@ -1,8 +1,11 @@
 package BaseClass;
-
+import org.openqa.selenium.remote.RemoteWebDriver;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,6 +21,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -51,11 +55,15 @@ public class BaseTest {
 	public static ExtentTest extentlogger = null;
 	public static String CurrentDate;	
 	
-	public WebDriver setup() {
+	public WebDriver setup() throws MalformedURLException, URISyntaxException {
 		ChromeOptions options = new ChromeOptions();
 		WebDriverManager.chromedriver().setup();
-		//options.addArguments("--headless");
-		driver = new ChromeDriver();;
+		options.addArguments("--headless");
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setBrowserName("chrome");
+		driver = new RemoteWebDriver(new URI("http://192.168.0.108:4444").toURL(), caps);
+		
+		//driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(1440,900));
 		driver.manage().window().maximize();
 		createReport();

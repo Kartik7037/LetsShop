@@ -5,7 +5,9 @@
     <classes>
       <class name="ShopStore.Scripts.Resgistration_Login">
         <methods>
-          <include name="TC004_LogoutUser" invocation-numbers="0"/>
+          <include name="TC002_LoginWithIncorrectCredentials"/>
+          <include name="TC003_VerifyTestCasesPage"/>
+          <include name="TC004_LogoutUser"/>
           <include name="quitDriver"/>
           <include name="launchDriver"/>
         </methods>
