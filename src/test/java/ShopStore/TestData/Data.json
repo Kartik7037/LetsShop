@@ -32,6 +32,10 @@
  "TC004_LogoutUser" : {
  "email" : "test@123mail.com",
  "password" : "Hello@123"
+ },
+ 
+ "TC005_LoginUser" : {
+ "email" : "test@1234mail.com",
+ "password" : "Hello@123"
  }
 }
-]

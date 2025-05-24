@@ -125,6 +125,25 @@ public class Resgistration_Login extends BaseTest{
 		}
 	}
 	
+	@Test(dataProvider= "getData")
+	public void TC005_LoginUser(HashMap<String,String> input) {
+		try {
+			HomePage homePage = new HomePage();
+			SignupLoginPage signupLoginPage = new SignupLoginPage();
+			
+			homePage.goTo();
+			signupLoginPage.clickSignupLoginBtn();
+			signupLoginPage.enterLoginEmail(input.get("email"));
+			signupLoginPage.enterLoginPassword(input.get("password"));
+			signupLoginPage.clickLoginBtn();
+			homePage.validateLoggedInUsername();
+			homePage.clickDeleteButton();
+			
+			
+		}catch (Exception e) {
+			updateTestReporter(getClass().getSimpleName(), "Run script", Status.FAIL, "Test Failed due to: " + e);
+		}
+	}
 	
 	  @DataProvider
 	   public Object[][] getData(Method method) throws IOException {
