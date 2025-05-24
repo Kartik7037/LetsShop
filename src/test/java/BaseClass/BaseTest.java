@@ -61,7 +61,7 @@ public class BaseTest {
 		options.addArguments("--headless");
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setBrowserName("chrome");
-		driver = new RemoteWebDriver(new URI("http://192.168.0.108:4444").toURL(), caps);
+		driver = new RemoteWebDriver(new URI("http://192.168.0.107:4444").toURL(), caps);
 		
 		//driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(1440,900));
