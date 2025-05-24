@@ -9,6 +9,7 @@
           <include name="TC003_VerifyTestCasesPage"/>
           <include name="TC004_LogoutUser"/>
           <include name="quitDriver"/>
+          <include name="TC001_Registration"/>
           <include name="launchDriver"/>
         </methods>
       </class> <!-- ShopStore.Scripts.Resgistration_Login -->

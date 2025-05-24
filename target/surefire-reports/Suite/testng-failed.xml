@@ -3,25 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="LetShop.Scripts.Product_Order_Cancel">
+      <class name="ShopStore.Scripts.Resgistration_Login">
         <methods>
-          <include name="launchDriver"/>
-          <include name="TC001_Product_Order"/>
+          <include name="TC002_LoginWithIncorrectCredentials"/>
+          <include name="TC003_VerifyTestCasesPage"/>
+          <include name="TC004_LogoutUser"/>
           <include name="quitDriver"/>
-          <include name="TC002_Cancel_Order"/>
+          <include name="TC001_Registration"/>
+          <include name="launchDriver"/>
         </methods>
-      </class> <!-- LetShop.Scripts.Product_Order_Cancel -->
+      </class> <!-- ShopStore.Scripts.Resgistration_Login -->
     </classes>
   </test> <!-- Test(failed) -->
-  <test thread-count="5" name="Test1(failed)" verbose="0">
-    <classes>
-      <class name="LetShop.Scripts.Product_Order_Cancel">
-        <methods>
-          <include name="launchDriver"/>
-          <include name="quitDriver"/>
-          <include name="TC003_Validate_OrderId"/>
-        </methods>
-      </class> <!-- LetShop.Scripts.Product_Order_Cancel -->
-    </classes>
-  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
