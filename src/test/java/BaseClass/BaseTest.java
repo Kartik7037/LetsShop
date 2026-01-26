@@ -59,11 +59,11 @@ public class BaseTest {
 		ChromeOptions options = new ChromeOptions();
 		WebDriverManager.chromedriver().setup();
 		options.addArguments("--headless");
-		DesiredCapabilities caps = new DesiredCapabilities();
+		DesiredCapabilities caps = new DesiredCapabilities(options);
 		caps.setBrowserName("chrome");
 		driver = new RemoteWebDriver(new URI("http://192.168.0.104:4444").toURL(), caps);
 		
-		//driver = new ChromeDriver();
+		//driver = new ChromeDriver(options);
 		driver.manage().window().setSize(new Dimension(1440,900));
 		driver.manage().window().maximize();
 		createReport();

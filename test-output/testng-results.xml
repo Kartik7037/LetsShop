@@ -2,16 +2,16 @@
 <testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-17T21:21:59 IST" name="Suite" finished-at="2026-01-17T21:22:55 IST" duration-ms="56280">
+  <suite started-at="2026-01-26T19:46:50 IST" name="Suite" finished-at="2026-01-26T19:47:39 IST" duration-ms="48653">
     <groups>
     </groups>
-    <test started-at="2026-01-17T21:21:59 IST" name="Test" finished-at="2026-01-17T21:22:55 IST" duration-ms="56280">
+    <test started-at="2026-01-26T19:46:50 IST" name="Test" finished-at="2026-01-26T19:47:39 IST" duration-ms="48653">
       <class name="ShopStore.Scripts.Resgistration_Login">
-        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-17T21:21:59 IST" name="launchDriver" finished-at="2026-01-17T21:22:02 IST" duration-ms="3043" status="PASS">
+        <test-method is-config="true" signature="launchDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-26T19:46:50 IST" name="launchDriver" finished-at="2026-01-26T19:46:53 IST" duration-ms="2511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method signature="TC006_RegistrationWithExistingEmail(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-17T21:22:02 IST" name="TC006_RegistrationWithExistingEmail" data-provider="getData" finished-at="2026-01-17T21:22:55 IST" duration-ms="52578" status="PASS">
+        <test-method signature="TC006_RegistrationWithExistingEmail(java.util.HashMap)[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-26T19:46:53 IST" name="TC006_RegistrationWithExistingEmail" data-provider="getData" finished-at="2026-01-26T19:47:39 IST" duration-ms="45720" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_RegistrationWithExistingEmail -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-17T21:22:55 IST" name="quitDriver" finished-at="2026-01-17T21:22:55 IST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:ShopStore.Scripts.Resgistration_Login@437da279]" started-at="2026-01-26T19:47:39 IST" name="quitDriver" finished-at="2026-01-26T19:47:39 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

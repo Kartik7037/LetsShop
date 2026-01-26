@@ -6,7 +6,7 @@
       <class name="ShopStore.Scripts.Resgistration_Login">
         <methods>
           <include name="quitDriver"/>
-          <include name="TC005_LoginUser" invocation-numbers="0"/>
+          <include name="TC006_RegistrationWithExistingEmail" invocation-numbers="0"/>
           <include name="launchDriver"/>
         </methods>
       </class> <!-- ShopStore.Scripts.Resgistration_Login -->
