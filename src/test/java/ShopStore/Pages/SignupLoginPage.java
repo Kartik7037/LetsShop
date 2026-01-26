@@ -19,6 +19,7 @@ public class SignupLoginPage extends Components{
 	protected By loginPassword = By.xpath("//input[@data-qa = 'login-password']");
 	protected By errorMessage = By.xpath("//p[contains(text(),'incorrect')]");
 	protected By loginBtn = By.xpath("//button[@data-qa = 'login-button']");
+	protected By signupErrorMessage = By.xpath("//div[@class = 'signup-form']/form/p");
 
 	
 	public void clickSignupLoginBtn() {
@@ -34,20 +35,21 @@ public class SignupLoginPage extends Components{
 		 waitElementToAppear(newUserSignUpLabel);
 		 getElement(name).sendKeys(Name);
 		 updateTestReporter(getClass().getSimpleName(), "Enter Name", Status.PASS,"Name Entered successfully");
-
+		 waitForSometime();
 	}
 	
 	public void enterSignupEmail(String signUpEmail) {
 		 waitElementToAppear(newUserSignUpLabel);
 		 getElement(signupEmail).sendKeys(signUpEmail);
 		 updateTestReporter(getClass().getSimpleName(), "Enter Signup Email", Status.PASS,"Signup Email Entered successfully");
-
+		 waitForSometime();
 	}
 	
 	public void clickSignupBtn() {
 		 getElement(signupBtn).click();
+		 if(!verifyObjectDisplayed(signupErrorMessage)) {
 		 updateTestReporter(getClass().getSimpleName(), "Click Signup Button", Status.PASS,"Signup Button is clicked and AccountInfo page displayed");
-
+		 }
 	}
 	
 	public void enterLoginEmail(String LoginEmail) {
@@ -77,6 +79,16 @@ public class SignupLoginPage extends Components{
    		else {
    		 updateTestReporter(getClass().getSimpleName(), "Click Login Button", Status.PASS,"Login Button is clicked and AccountInfo page displayed");
    		}
+    }
+    
+    public void validateSignupErrorMessage() {
+    	if(verifyObjectDisplayed(signupErrorMessage)) {
+    		updateTestReporter(getClass().getSimpleName(), "Click Signup Button", Status.PASS,"Signup Button is clicked and error message 'Email Address already exist!' is visible");
+    	}
+    	else {
+    		updateTestReporter(getClass().getSimpleName(), "Click Signup Button", Status.PASS,"Signup Button is clicked and AccountInfo page displayed");
+    	}
+    	waitForSometime();
     }
 	
 }

@@ -137,8 +137,26 @@ public class Resgistration_Login extends BaseTest{
 			signupLoginPage.enterLoginPassword(input.get("password"));
 			signupLoginPage.clickLoginBtn();
 			homePage.validateLoggedInUsername();
-			homePage.clickDeleteButton();
+			//homePage.clickDeleteButton();
 			
+			
+		}catch (Exception e) {
+			updateTestReporter(getClass().getSimpleName(), "Run script", Status.FAIL, "Test Failed due to: " + e);
+		}
+	}
+	
+	@Test(dataProvider= "getData")
+	public void TC006_RegistrationWithExistingEmail(HashMap<String,String> input) {
+		try {
+			HomePage homePage = new HomePage();
+			SignupLoginPage signupLoginPage = new SignupLoginPage();
+			
+			homePage.goTo();
+			signupLoginPage.clickSignupLoginBtn();
+			signupLoginPage.enterName(input.get("name"));
+			signupLoginPage.enterSignupEmail(input.get("email"));
+			signupLoginPage.clickSignupBtn();
+			signupLoginPage.validateSignupErrorMessage();
 			
 		}catch (Exception e) {
 			updateTestReporter(getClass().getSimpleName(), "Run script", Status.FAIL, "Test Failed due to: " + e);

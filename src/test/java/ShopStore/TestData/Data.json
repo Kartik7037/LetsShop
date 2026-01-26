@@ -35,7 +35,12 @@
  },
  
  "TC005_LoginUser" : {
- "email" : "test@1234mail.com",
+ "email" : "test@123mail.com",
  "password" : "Hello@123"
+ },
+ 
+  "TC006_RegistrationWithExistingEmail" : {
+ "name" : "testUser",
+ "email" : "test@123mail.com"
  }
 }
