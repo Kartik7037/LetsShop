@@ -5,11 +5,11 @@
     <classes>
       <class name="ShopStore.Scripts.Resgistration_Login">
       <methods>
-       <!--      <include name="TC001_Registration"></include>  
+            <include name="TC001_Registration"></include>  
             <include name="TC002_LoginWithIncorrectCredentials"></include>     
             <include name="TC003_VerifyTestCasesPage"></include>        
             <include name="TC004_LogoutUser"></include>  
-            <include name="TC005_LoginUser"></include>   -->
+            <include name="TC005_LoginUser"></include>   
             <include name="TC006_RegistrationWithExistingEmail"></include>
         </methods>
       </class>
